@@ -12,7 +12,7 @@ public class LocalHostRouteConfig {
     public RouteLocator localHostRoutes(RouteLocatorBuilder builder) {
 
         return builder.routes()
-                .route(r -> r.path("/customer/api/v1/*")
+                .route(r -> r.path("/api/v1/customers/*")
                 .uri("http://localhost:8070")
                 .id("rapidkart-customer-service"))
                 .build();

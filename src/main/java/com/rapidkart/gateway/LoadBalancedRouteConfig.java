@@ -13,10 +13,10 @@ public class LoadBalancedRouteConfig {
     @Bean
     public RouteLocator loadBalancedRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-                 .route(r -> r.path("/customer/api/v1/*")
+                 .route(r -> r.path("/api/v1/customers/*")
                  .uri("lb://rapidkart-customer-service")
                  .id("customer-service"))
-                 .route(r -> r.path("/order/api/v1/*")
+                 .route(r -> r.path("/api/v1/orders/*")
                  .uri("lb://rapidkart-order-service")
                  .id("order-service"))
                 .build();
