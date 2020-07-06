@@ -14,12 +14,10 @@ public class LoadBalancedRouteConfig {
     public RouteLocator loadBalancedRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                  .route(r -> r.path("/api/v1/customers/*", "/api/v1/customers*")
-                 //.uri("lb://rapidkart-customer-service")
-                   .uri("http://localhost:8070")
+                 .uri("lb://rapidkart-customer-service") //.uri("http://localhost:8071")
                  .id("customer-service"))
                  .route(r -> r.path("/api/v1/orders/*", "/api/v1/orders*")
-                 //.uri("lb://rapidkart-order-service")
-                   .uri("http://localhost:8071")
+                 .uri("lb://rapidkart-order-service")
                  .id("order-service"))
                 .build();
     }
