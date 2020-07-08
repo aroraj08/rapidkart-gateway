@@ -75,7 +75,7 @@
                     <verbose>true</verbose>
                     <images>
                         <image>
-                            <name>${docker.image.prefix}/${docker.image.name}</name>
+                            <name>${docker.image.prefix}/${docker.image.name}-%t</name>
                             <alias>${project.artifactId}</alias>
                             <build>
                                 <!--copies artifact to docker build dir in target-->
