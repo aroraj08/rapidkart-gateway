@@ -6,3 +6,7 @@ Docker Image can be built using Fabric8 maven plugin -
 
 `mvn clean package docker:build docker:push`
 
+`mvn release:prepare -P ossrh`
+
+`mvn release:perform -P ossrh`
+
