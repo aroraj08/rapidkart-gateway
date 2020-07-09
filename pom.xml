@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
-        <docker.image.prefix>rapidkart</docker.image.prefix>
+        <docker.image.prefix>arorajatin08</docker.image.prefix>
         <docker.image.name>${project.artifactId}</docker.image.name>
     </properties>
 
