@@ -4,9 +4,5 @@ A basic gateway implemented using Spring Cloud Gateway.
 
 Docker Image can be built using Fabric8 maven plugin - 
 
-`mvn clean package docker:build docker:push`
-
-`mvn release:prepare -P ossrh`
-
-`mvn release:perform -P ossrh`
+`mvn clean package -Dmaven.test.skip=true docker:build docker:push`
 
